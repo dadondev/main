@@ -5,6 +5,6 @@ async function getResponse(text) {
     `https://api.dictionaryapi.dev/api/v2/entries/en/${text}`
   );
   const response = await request.json();
-  responseWord = response;
-  console.log(responseWord.firstChild);
+  responseWord = response[0];
+  renderMean();
 }
