@@ -57,12 +57,13 @@
           <input
             type="text"
             id="inPutWord"
-            class="w-full max-w-full py-[14px] px-6 rounded-2xl bg-[#F4F4F4] focus:outline-[#A445ED] dark:text-white md:py-[22px] text-base md:text-xl"
+            class="w-full max-w-full py-[14px] pr-10 px-6 rounded-2xl bg-[#F4F4F4] focus:outline-[#A445ED] dark:text-white md:py-[22px] text-base md:text-xl"
             required
           />
           <button
-            class="absolute top-2/4 -translate-y-1/2 right-4"
+            class="absolute text-center w-10 top-2/4 -translate-y-1/2 right-0"
             type="submit"
+            id="submit"
           >
             <img src="./images/icon_search.svg" alt="" />
           </button>
@@ -86,23 +87,25 @@
           <div>
             <img
               src="./images/play.svg"
+              id="player"
               class="cursor-pointer max-w-12 md:max-w-[75px]"
               alt="play"
+              onclick=""
             />
           </div>
         </div>
       </section>
       <!-- Mean section -->
-      <section class="container lg:max-w-[736px] mx-auto mb-6">
+      <section class="container lg:max-w-[736px] mx-auto mb-6" id="List">
         <!-- word's different mean -->
-        <div class="">
+        <div>
           <div class="flex items-center gap-2 overflow-x-hidden mb-8">
             <span id="mean" class="italic font-bold">noun</span
             ><img src="./images/pattern.svg" alt="pattern" class="grow" />
           </div>
           <div>
             <span class="text-base text-[#757575]">Meaning</span>
-            <ul class="ulList pt-4">
+            <ul class="pt-4">
               <li>
                 (etc.) A set of keys used to operate a typewriter, computer etc.
               </li>
@@ -112,5 +115,6 @@
       </section>
     </main>
     <script src="./api.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
